@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "colfax-light";
+  src: url("../fonts/colfax-light.woff") format("woff"),
+    url("../fonts/colfax-light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "colfax-medium";
+  src: url("../fonts/colfax-medium.woff") format("woff"),
+    url("../fonts/colfax-medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "colfax-bold";
+  src: url("../fonts/colfax-bold.woff") format("woff"),
+    url("../fonts/colfax-bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::-webkit-selection {
+  color: #000000;
+  background-color: #fff;
+}
+*::-moz-selection {
+  color: #000000;
+  background-color: #fff;
+}
+*::selection {
+  color: #000000;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hero {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  letter-spacing: -1px;
+  font-weight: normal;
+  font-family: "colfax-light", sans-serif;
+  line-height: 1.6;
+  font-size: 40px;
+  color: #aaa;
+}
+
+h2,
+.h2 {
+  font-size: 36px;
+}
+
+h3,
+.h3 {
+  letter-spacing: -1px;
+  font-weight: normal;
+  font-family: "colfax-bold", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+p,
+.p,
+a {
+  letter-spacing: -0.3px;
+  font-family: "colfax-light", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #aaa;
+}
+
+a {
+  font-family: "colfax-medium", sans-serif;
+}
+
+a:hover {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  h1,
+  .h1,
+  .word-shift b,
+  h2,
+  .h2 {
+    font-size: 30px;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.hero {
+  padding: 240px 0 140px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.subtitle {
+  margin: 16px 0 0 -4px;
+  font-size: 12px;
+}
+.title.wide {
+  width: 600px;
+}
+
+.footer {
+  line-height: 1.33341;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  background-color: #222;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 40px 0;
+}
+
+.footer p {
+  color: #aaa;
+  font-size: 12px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #f2f3f5;
+  font-family: "colfax-medium", sans-serif;
+  text-align: center;
+  background: #222;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
